@@ -11,7 +11,7 @@ const defaultPerson = {
 };
 
 export const Bailiff = () => {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 
 	const handleModal = () => setIsOpen(!isOpen);
 

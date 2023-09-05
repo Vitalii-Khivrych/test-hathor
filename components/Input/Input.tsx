@@ -12,7 +12,7 @@ export const Input: FC<InputTypes> = ({
 }) => {
 	return (
 		<div className="relative w-full">
-			<label className="text-lg tracking-[0.45px] text-secondary ">
+			<label className="text-sm tracking-[0.45px] text-secondary md:text-lg ">
 				{text}
 				<input
 					type={type}

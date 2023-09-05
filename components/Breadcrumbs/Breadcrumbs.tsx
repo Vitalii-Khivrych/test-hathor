@@ -14,7 +14,7 @@ const breadcrumbs = [
 
 export const Breadcrumbs: FC<BreadcrumbsProps> = ({ className }) => {
 	return (
-		<nav className={`text-xs tracking-[0.3px] text-secondary ${className}`}>
+		<nav className={`text-xs tracking-[0.3px] text-secondary smOnly:sr-only ${className}`}>
 			<ul className="flex ">
 				<li>
 					<Link href="/avaleht" className="">

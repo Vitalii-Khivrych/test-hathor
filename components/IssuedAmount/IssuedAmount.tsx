@@ -22,11 +22,11 @@ export const IssuedAmount: FC<IssuedAmountProps> = ({ className }) => {
 
 	return (
 		<div
-			className={`${className} bg-[#FDE9D84F] pb-[3px] pt-[15px] text-right text-2xl font-bold leading-[44px] text-primary`}
+			className={`${className} bg-[#FDE9D84F] pb-[3px] pt-[15px] text-right text-sm font-bold text-primary xl:text-2xl xl:leading-[44px]`}
 		>
-			<p className="container relative pr-[220px]">
+			<p className="container relative pr-[100px] md:pr-[160px] xl:pr-[220px]">
 				Sellel aastsl sissenõudjatele üle kantud summa
-				<span className="absolute left-[84%]">€ {transformNumber(amount)}</span>
+				<span className="absolute left-[80%] top-0 xl:left-[84%]">€ {transformNumber(amount)}</span>
 			</p>
 		</div>
 	);

@@ -2,10 +2,12 @@ import { error } from 'console';
 import { z } from 'zod';
 
 export const schema = z.object({
-	data: z.coerce.date({
-		required_error: 'Please select a date ',
-		invalid_type_error: "That's not a date!",
-	}),
+	data: z.coerce
+		.date({
+			required_error: 'Please select a date ',
+			invalid_type_error: "That's not a date!",
+		})
+		.min(new Date('2000-01-01'), { message: 'Too old' }),
 	case_number: z
 		.string()
 		.trim()

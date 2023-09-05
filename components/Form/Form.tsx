@@ -23,20 +23,19 @@ export const CustomForm = () => {
 
 	const onSubmit = (data: IFormInputs) => {
 		console.log(data);
-		console.log('first', 'first');
-		alert('Form send');
-		// reset();
+		alert('See console');
+		reset();
 	};
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
-			<CustomFieldset idAreaLabel="bailiff" className="mb-6 pr-[33px]">
+			<CustomFieldset idAreaLabel="bailiff" className="mb-6 md:pr-[33px]">
 				<Bailiff />
 			</CustomFieldset>
 
 			<CustomFieldset
 				idAreaLabel="case and date"
-				className="mb-[60px] grid grid-cols-2 gap-x-4 pb-[21px]"
+				className="mb-[60px] grid gap-x-4 pb-[21px] md:grid-cols-2 smOnly:gap-y-5"
 			>
 				<Input
 					id="data"
@@ -63,7 +62,7 @@ export const CustomForm = () => {
 				legend="Sissenõudja andmed:"
 				className="mb-[60px] pb-[37px]"
 			>
-				<div className="grid grid-cols-2 gap-x-4 gap-y-5">
+				<div className="grid gap-y-5 md:grid-cols-2 md:gap-x-4">
 					<Input
 						id="claimant_name"
 						type="text"
@@ -128,7 +127,7 @@ export const CustomForm = () => {
 			<CustomFieldset
 				idAreaLabel="The debtor"
 				legend="Võlgniku andmed:"
-				className="mb-[27px] grid grid-cols-2 gap-x-4 pb-[41px]"
+				className="mb-[27px] grid pb-[41px] md:grid-cols-2 md:gap-x-4 smOnly:gap-y-5"
 			>
 				<Input
 					id="debtor_name"

@@ -14,7 +14,9 @@ export const CustomFieldset: FC<CustomFieldsetProps> = ({
 			aria-labelledby={idAreaLabel}
 			className={`relative rounded-lg border-[1px] border-[#1A1A1F12] p-[17px] ${className}`}
 		>
-			<p className="absolute left-0 top-[-36px] text-lg tracking-[0.45px] text-label">{legend}</p>
+			<p className="absolute left-0 top-[-36px] text-base tracking-[0.45px] text-label md:text-lg">
+				{legend}
+			</p>
 			{children}
 		</div>
 	);

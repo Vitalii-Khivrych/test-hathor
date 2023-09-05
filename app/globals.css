@@ -4,7 +4,7 @@
 
 @layer components {
 	.button {
-		@apply flex items-center justify-center rounded-[6px] border-2 border-accent bg-white text-sm font-bold uppercase leading-[23.2px] tracking-[0.35px] text-accent duration-300 hover:bg-hover hover:text-white focus:bg-hover focus:text-white;
+		@apply flex items-center justify-center rounded-[6px] border-2 border-accent bg-white text-xs font-bold uppercase leading-[23.2px] tracking-[0.35px] text-accent duration-300 hover:bg-hover hover:text-white focus:bg-hover focus:text-white md:text-sm;
 	}
 
 	.form-text {
